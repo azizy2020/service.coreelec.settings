@@ -489,7 +489,7 @@ class updates:
         try:
             self.oe.dbg_log('updates::get_json', 'enter_function', 0)
             if url is None:
-                url = self.UPDATE_DOWNLOAD_URL % ('update.coreelec.org', '', 'releases.php')
+                url = self.UPDATE_DOWNLOAD_URL % ('update.org', '', 'php')
             data = self.oe.load_url(url)
             if not data is None:
                 update_json = json.loads(data)
